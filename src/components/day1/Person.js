@@ -1,12 +1,12 @@
 import React from "react";
 // import logo from "./logo.svg";
-// import "src/App.css";
+import "../../App.css";
 
-function Person() {
+function Person(props) {
   return (
-    <div>
-      <h1>Thaneshwor</h1>
-      <p>Your Age: 25</p>
+    <div className='person'>
+      <h1>{props.name}</h1>
+      <p>Your age: {props.age}</p>
     </div>
   );
 }
