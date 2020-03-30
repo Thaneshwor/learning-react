@@ -1,10 +1,10 @@
 import React from "react";
 // import logo from "./logo.svg";
-// import "src/App.css";
+import "../../App.css";
 
 function Person() {
   return (
-    <div>
+    <div className='person'>
       <h1>Thaneshwor</h1>
       <p>Your Age: 25</p>
     </div>
