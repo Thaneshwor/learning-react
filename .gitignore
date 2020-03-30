@@ -1,1 +1,21 @@
-.gz
+# Node stuff
+npm-debug.log
+node_modules
+# Favour yarn.lock, heroku fails if both included
+package-lock.json
+# API keys
+.env
+# Editors
+.idea
+# OS metadata
+.DS_Store
+Thumbs.db
+# Compiled js
+public/js/main-compiled.js
+public/js/main-compiled.js.map
+build/
+#yarn files
+yarn-error.log
+#vscode stuff
+.vscode
+>>>>>>> 966d916db63a79c85b1a8383a55eaca756e652c3
