@@ -6,7 +6,8 @@ function Person(props) {
   return (
     <div className='person'>
       <h1>{props.name}</h1>
-      <p>Your age: {props.age}</p>
+      <p>{props.heroName}</p>
+      {props.children}
     </div>
   );
 }
