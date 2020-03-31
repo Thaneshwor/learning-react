@@ -7,13 +7,16 @@ import Hello from './components/day1/Hello';
 import JSXtest from './components/day1/JSXtest';
 import Person from './components/day1/Person';
 import Message from './components/day1/Message';
+import Counter from './components/day2/Counter';
+import Car from './components/day2/Car';
 
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <Message name="Diana" heroName='Wonder Woman' />
+        <Counter />
+        <Car />
       </div>
     )
   }
