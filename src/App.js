@@ -10,6 +10,7 @@ import Counter from './components/day2/Counter';
 import Greet from './components/day2/Greet';
 import Welcome from './components/day2/Welcome';
 import FunctionClick from './components/day2/eventHandling/FunctionClick';
+import UserList from './components/day2/eventHandling/UserList';
 import ClassClick from './components/day2/eventHandling/ClassClick';
 import Toggle from './components/day2/eventHandling/Toggle';
 import Car from './components/day2/Car';
@@ -22,6 +23,7 @@ class App extends Component {
         <FunctionClick />
         <ClassClick />
         <Toggle />
+        <UserList />
       </div>
     )
   }
