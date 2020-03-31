@@ -14,15 +14,16 @@ import './App.css';
 // import ClassClick from './components/day2/eventHandling/ClassClick';
 // import Toggle from './components/day2/eventHandling/Toggle';
 // import EventBind from './components/day2/eventBinding/EventBind';
-import ParentComponent from './components/day2/ParentComponent';
+// import ParentComponent from './components/day2/ParentComponent';
 // import Car from './components/day2/Car';
+import MouseTracker from './components/day2/renderProps/MouseTracker'
 
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <ParentComponent />
+        <MouseTracker />
       </div>
     )
   }
