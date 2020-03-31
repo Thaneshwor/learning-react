@@ -17,14 +17,17 @@ import './App.css';
 // import ParentComponent from './components/day2/ParentComponent';
 // import Car from './components/day2/Car';
 import MouseTracker from './components/day2/renderProps/MouseTracker'
+import UserGreeting from './components/day2/conditionalRendering/UserGreeting';
+import LoginController from './components/day2/conditionalRendering/LoginController';
 
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <MouseTracker />
-      </div>
+        <LoginController />
+        <UserGreeting />
+      </div >
     )
   }
 }
