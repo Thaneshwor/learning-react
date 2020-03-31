@@ -1,5 +1,9 @@
-// Use of setState() to modify state
-// If we try to modify state directly UI will not rerender
+//1. Use of setState() to modify state
+//2. If we try to modify state directly UI will not rerender
+//3. Code has to be executed after the state has been updated? Place that code in the call
+//     back function with in the second argument to the setState method.
+//4. When we have to update state based on the previous state value, pass in a function 
+//   as an argument instead of the regular object.
 
 import React, { Component } from 'react'
 
