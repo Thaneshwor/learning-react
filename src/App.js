@@ -13,7 +13,8 @@ import './App.css';
 // import UserList from './components/day2/eventHandling/UserList';
 // import ClassClick from './components/day2/eventHandling/ClassClick';
 // import Toggle from './components/day2/eventHandling/Toggle';
-import EventBind from './components/day2/eventBinding/EventBind';
+// import EventBind from './components/day2/eventBinding/EventBind';
+import ParentComponent from './components/day2/ParentComponent';
 // import Car from './components/day2/Car';
 
 
@@ -21,7 +22,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <EventBind />
+        <ParentComponent />
       </div>
     )
   }
