@@ -28,11 +28,13 @@ import './App.css';
 // import LifecycleA from './components/day3/componentlifeCycle/LifecycleA';
 // import FragmentDemo from './components/day3/fragments/FragmentDemo';
 import Table from './components/day3/fragments/Table';
+import PureComp from './components/day3/pureComponents/PureComp';
+import ParentComp from './components/day3/pureComponents/ParentComp';
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <Table />
+        <ParentComp />
       </div >
     )
   }
