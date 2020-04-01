@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import PortalDemo from './components/day3/portals/PortalDemo';
-
+// import PortalDemo from './components/day3/portals/PortalDemo';
 // import Hello from './components/day1/Hello';
 // import JSXtest from './components/day1/JSXtest';
 // import Person from './components/day1/Person';
@@ -31,11 +30,22 @@ import PortalDemo from './components/day3/portals/PortalDemo';
 // import Table from './components/day3/fragments/Table';
 // import PureComp from './components/day3/pureComponents/PureComp';
 // import ParentComp from './components/day3/pureComponents/ParentComp';
+import Hero from './components/day3/errorBoundaries/Hero';
+import ErrorBoundary from './components/day3/errorBoundaries/ErrorBoundary';
+
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <PortalDemo />
+        <ErrorBoundary>
+          <Hero heroName="superman" />
+        </ErrorBoundary>
+        <ErrorBoundary>
+          <Hero heroName="batman" />
+        </ErrorBoundary>
+        <ErrorBoundary>
+          <Hero heroName="joker" />
+        </ErrorBoundary>
       </div >
     )
   }
