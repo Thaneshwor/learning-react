@@ -25,12 +25,12 @@ import './App.css';
 // import styles from './components/day3/css/myStyle.module.css';
 import Form from './components/day3/formHandling/Form';
 import Reservation from './components/day3/formHandling/Reservation';
+import LifecycleA from './components/day3/componentlifeCycle/LifecycleA';
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <Reservation />
-        {/* <Form /> */}
+        <LifecycleA />
       </div >
     )
   }
