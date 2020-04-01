@@ -20,16 +20,17 @@ import './App.css';
 // import UserGreeting from './components/day2/conditionalRendering/UserGreeting';
 // import LoginController from './components/day2/conditionalRendering/LoginController';
 // import NameList from './components/day2/listRendering/NameList';
-import StyleSheet from './components/day3/StyleSheet';
-import Inline from './components/day3/Inline';
-import styles from './components/day3/css/myStyle.module.css';
+// import StyleSheet from './components/day3/StyleSheet';
+// import Inline from './components/day3/Inline';
+// import styles from './components/day3/css/myStyle.module.css';
+import Form from './components/day3/formHandling/Form';
+import Reservation from './components/day3/formHandling/Reservation';
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <StyleSheet primary={true} />
-        <Inline />
-        <h2 className={styles.succes}>Parent Success</h2>
+        <Reservation />
+        {/* <Form /> */}
       </div >
     )
   }
