@@ -23,14 +23,16 @@ import './App.css';
 // import StyleSheet from './components/day3/StyleSheet';
 // import Inline from './components/day3/Inline';
 // import styles from './components/day3/css/myStyle.module.css';
-import Form from './components/day3/formHandling/Form';
-import Reservation from './components/day3/formHandling/Reservation';
-import LifecycleA from './components/day3/componentlifeCycle/LifecycleA';
+// import Form from './components/day3/formHandling/Form';
+// import Reservation from './components/day3/formHandling/Reservation';
+// import LifecycleA from './components/day3/componentlifeCycle/LifecycleA';
+// import FragmentDemo from './components/day3/fragments/FragmentDemo';
+import Table from './components/day3/fragments/Table';
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <LifecycleA />
+        <Table />
       </div >
     )
   }
