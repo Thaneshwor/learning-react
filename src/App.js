@@ -19,14 +19,14 @@ import './App.css';
 import MouseTracker from './components/day2/renderProps/MouseTracker'
 import UserGreeting from './components/day2/conditionalRendering/UserGreeting';
 import LoginController from './components/day2/conditionalRendering/LoginController';
+import NameList from './components/day2/listRendering/NameList';
 
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <LoginController />
-        <UserGreeting />
+        <NameList />
       </div >
     )
   }
