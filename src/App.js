@@ -30,22 +30,24 @@ import './App.css';
 // import Table from './components/day3/fragments/Table';
 // import PureComp from './components/day3/pureComponents/PureComp';
 // import ParentComp from './components/day3/pureComponents/ParentComp';
-import Hero from './components/day3/errorBoundaries/Hero';
-import ErrorBoundary from './components/day3/errorBoundaries/ErrorBoundary';
+// import Hero from './components/day3/errorBoundaries/Hero';
+// import ErrorBoundary from './components/day3/errorBoundaries/ErrorBoundary';
+// import ClickCounter from './components/day3/hoc/ClickCounter';
+// import HoverCounter from './components/day3/hoc/HoverCounter';
+import ClickCounter from './components/day4/renderProps/ClickCounter';
+import HoverCounter from './components/day4/renderProps/HoverCounter';
+import User from './components/day4/renderProps/User';
+import Counter from './components/day4/renderProps/Counter';
+import { UserProvider } from './components/day4/context/userContext';
+import ComponentC from './components/day4/context/ComponntC';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <ErrorBoundary>
-          <Hero heroName="superman" />
-        </ErrorBoundary>
-        <ErrorBoundary>
-          <Hero heroName="batman" />
-        </ErrorBoundary>
-        <ErrorBoundary>
-          <Hero heroName="joker" />
-        </ErrorBoundary>
+        <UserProvider value='Thanos'>
+          <ComponentC />
+        </UserProvider>
       </div >
     )
   }
