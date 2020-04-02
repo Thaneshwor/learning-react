@@ -38,28 +38,16 @@ import ClickCounter from './components/day4/renderProps/ClickCounter';
 import HoverCounter from './components/day4/renderProps/HoverCounter';
 import User from './components/day4/renderProps/User';
 import Counter from './components/day4/renderProps/Counter';
+import { UserProvider } from './components/day4/context/userContext';
+import ComponentC from './components/day4/context/ComponntC';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        {/* <ClickCounter />
-        <HoverCounter />
-        <User render={(isLoggedIn) => isLoggedIn ? 'Thanos' : 'Guest'} /> */}
-        <Counter
-          render={(count, incrementCount) => (
-            <ClickCounter count={count} incrementCount={incrementCount} />
-
-          )} />
-
-
-        <Counter
-          render={(count, incrementCount) => (
-            <HoverCounter count={count} incrementCount={incrementCount} />
-
-          )} />
-
-
+        <UserProvider value='Thanos'>
+          <ComponentC />
+        </UserProvider>
       </div >
     )
   }
