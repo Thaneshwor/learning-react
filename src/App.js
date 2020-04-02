@@ -32,20 +32,15 @@ import './App.css';
 // import ParentComp from './components/day3/pureComponents/ParentComp';
 import Hero from './components/day3/errorBoundaries/Hero';
 import ErrorBoundary from './components/day3/errorBoundaries/ErrorBoundary';
+import ClickCounter from './components/day3/hoc/ClickCounter';
+import HoverCounter from './components/day3/hoc/HoverCounter';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <ErrorBoundary>
-          <Hero heroName="superman" />
-        </ErrorBoundary>
-        <ErrorBoundary>
-          <Hero heroName="batman" />
-        </ErrorBoundary>
-        <ErrorBoundary>
-          <Hero heroName="joker" />
-        </ErrorBoundary>
+        <ClickCounter name='Thanos' />
+        <HoverCounter />
       </div >
     )
   }
